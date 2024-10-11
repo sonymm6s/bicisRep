@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AuthLogInComponent } from './auth-log-in.component';
+import { BicisLogInComponent } from './bicis-log-in.component';
 
-describe('AuthLogInComponent', () => {
-  let component: AuthLogInComponent;
-  let fixture: ComponentFixture<AuthLogInComponent>;
+describe('BicisLogInComponent', () => {
+  let component: BicisLogInComponent;
+  let fixture: ComponentFixture<BicisLogInComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AuthLogInComponent]
+      imports: [BicisLogInComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AuthLogInComponent);
+    fixture = TestBed.createComponent(BicisLogInComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
