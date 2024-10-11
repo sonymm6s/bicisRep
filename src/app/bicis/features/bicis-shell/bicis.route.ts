@@ -20,7 +20,7 @@ export default [
     },
     {
         path: '**',
-        redirectTo: 'log-in'
+        redirectTo: 'bicis'
     }
 
 ] as Routes
