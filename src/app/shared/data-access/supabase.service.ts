@@ -1,6 +1,7 @@
 import { environment } from '../../../environments/environment.development';
-import { createClient, SupabaseClient } from './../../../../node_modules/@supabase/supabase-js/src/index';
+import {SupabaseClient } from '@supabase/supabase-js';
 import { Injectable } from "@angular/core";
+import {createClient } from '@supabase/supabase-js';
 
 @Injectable({providedIn: 'root'})
 export class SupabaseService {
@@ -8,7 +9,7 @@ export class SupabaseService {
 
     constructor(){
         this.supabaseClient = createClient(
-            environment.SUPABASE_URL, 
+            environment.SUPABASE_URL,
             environment.SUPABASE_KEY
         );
     }
