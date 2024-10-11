@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BicisLogInComponent } from './bicis-log-in.component';
+import BicisLogInComponent  from './bicis-log-in.component';
 
 describe('BicisLogInComponent', () => {
   let component: BicisLogInComponent;

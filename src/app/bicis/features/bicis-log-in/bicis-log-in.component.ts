@@ -4,13 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-bicis-log-in',
   standalone: true,
   imports: [],
-  template: `
-    <p>
-      bicis-log-in works!
-    </p>
-  `,
+  templateUrl: './bicis-log-in.html' ,
   styleUrl: './bicis-log-in.component.css'
 })
-export class BicisLogInComponent {
+export default class BicisLogInComponent {
 
 }
