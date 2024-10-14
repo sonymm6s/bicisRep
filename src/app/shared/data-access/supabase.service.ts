@@ -13,4 +13,20 @@ export class SupabaseService {
             environment.SUPABASE_KEY
         );
     }
+
+    async getBikes() {
+        const { data, error } = await this.supabaseClient
+          .from('bicis') // Reemplaza 'bikes' con el nombre de tu tabla
+          .select('*');
+        if (error) {
+          console.error('Error obteniendo datos:', error);
+          return [];
+        }
+        
+        console.log('Data', data);
+        return data;
+      }
+
+      
+
 }

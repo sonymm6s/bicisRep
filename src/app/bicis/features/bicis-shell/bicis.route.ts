@@ -11,7 +11,7 @@ export default [
         loadComponent: () => import('../bicis-log-in/bicis-log-in.component')
     },
     {
-        path: 'bicis',
+        path: 'bicis-list',
         loadComponent: () => import('../bicis-list/bicis-list.component')
     },
     {

@@ -1,1 +1,33 @@
-<p>bicis-list works!</p>
+<div class="container">
+    <h2>Listado de Bicicletas</h2>
+  
+    <!-- Verificar si hay bicicletas para mostrar -->
+    <div *ngIf="bikes.length > 0; else noBikes">
+<table class="table-auto w-full">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Ciudad</th>
+        <th>Descripción</th>
+        <th>Foto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bike of bikes">
+        <td>class="border px-4 py-2">{{ bike.id }}</td>
+        <td>class="border px-4 py-2">{{ bike.ciudad }}</td>
+        <td>class="border px-4 py-2">{{ bike.descripcion }}</td>
+        <td>class="border px-4 py-2">
+            <img [src]="bike.foto" alt="Foto de la bicicleta" class="h-24">
+        </td>
+      </tr>
+            
+    </tbody>
+  </table>
+</div>
+
+<!-- Mensaje si no hay bicicletas -->
+<ng-template #noBikes>
+  <p>No hay bicicletas para mostrar.</p>
+</ng-template>
+</div>

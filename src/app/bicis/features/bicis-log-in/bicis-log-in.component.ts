@@ -40,7 +40,7 @@ export default class BicisLogInComponent {
 
       if (error) throw error;
       console.log(data);
-      this._router.navigateByUrl('/')
+      this._router.navigateByUrl('/bicis/bicis-list')
     } catch (error) {
       if(error instanceof Error) {
         console.log(error);
