@@ -1,9 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import {EmailValidator, FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { BicisService } from '../../data-access/bicis.service';
-import { SupabaseClient } from '@supabase/supabase-js';
-import { SupabaseService } from '../../../shared/data-access/supabase.service';
 
 interface SigUpForm {
   email: FormControl<null | string>;
